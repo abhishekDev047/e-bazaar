@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
 import AppContext from "../Context/AppContext";
 
 const Login = () => {
@@ -18,7 +17,7 @@ const Login = () => {
   }
 
   return (
-    <div className="flex flex-col flex-wrap">
+    <div className="flex flex-col flex-wrap lg:text-xl">
       <p className="mt-40 mb-7 text-center">Please Log-in to use E-Bazzar</p>
       <p className="my-4 text-center">
         <input
@@ -44,11 +43,7 @@ const Login = () => {
         </button>
       </p>
       <p className="text-sm mt-40 text-center">
-        Don't have an Account ,create a{" "}
-        <Link className="text-blue-700" to="/New">
-          new account{" "}
-        </Link>
-        right now.
+          this is a demo site so put anything as username and password
       </p>
     </div>
   );

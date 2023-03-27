@@ -47,8 +47,8 @@ const Home1 = () => {
   if (isOpen === false) {
      return (
     <div className="flex flex-col p-2">
-      <div className="my-2 flex flex-col items-center">
-        <span className="w-full  text-xs text-center">
+      <div className="my-2 flex flex-col items-center ">
+        <span className="w-full  text-xs sm:text-base text-center">
           <button
             className="p-2 hover:bg-stone-400"
             onClick={() => {
@@ -90,7 +90,7 @@ const Home1 = () => {
           Search
         </button>
       </div>
-      <div className="my-2">
+      <div className="my-2 px-1 sm:flex sm:flex-row sm:flex-wrap">
         {product.map((element) => {
           return (
             <Products
